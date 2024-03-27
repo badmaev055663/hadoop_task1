@@ -8,9 +8,9 @@ import java.io.*;
 import java.util.*;
 
 public class Summer
-extends Reducer<Text, IntWritable, Text, IntWritable>
+extends Reducer<IntWritable, IntWritable, IntWritable, IntWritable>
 {
-    public void reduce(Text key, Iterable<IntWritable> values, Context context)
+    public void reduce(IntWritable key, Iterable<IntWritable> values, Context context)
 	throws IOException, InterruptedException
 	{
         int sum = 0;
